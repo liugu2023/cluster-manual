@@ -4,16 +4,16 @@ export default defineConfig({
   title: '燕山大学GPU集群用户手册',
   description: '燕山大学计算机学科GPU集群使用指南',
   lang: 'zh-CN',
-  base: '/YSUHPC/',
+  base: '/'},
   cleanUrls: true,
   
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
-    ['link', { rel: 'icon', href: '/YSUHPC/logo.svg' }]
+    ['link', { rel: 'icon', href: '/logo.svg' }]
   ],
   
   themeConfig: {
-    logo: '/YSUHPC/logo.svg',
+    logo: '/logo.svg',
     siteTitle: '燕山大学GPU集群',
     
     nav: [

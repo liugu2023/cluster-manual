@@ -2,7 +2,7 @@ name: Deploy VitePress site to Pages
 
 on:
   push:
-    branches: [main]
+    branches: [main, master]
   workflow_dispatch:
 
 permissions:
@@ -36,7 +36,9 @@ jobs:
         run: npm ci
       
       - name: Build with VitePress
-        run: npm run build
+        run: |
+          npm run build
+          touch docs/.vitepress/dist/.nojekyll
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
