@@ -4,7 +4,7 @@ export default defineConfig({
   title: '燕山大学GPU集群用户手册',
   description: '燕山大学计算机学科GPU集群使用指南',
   lang: 'zh-CN',
-  base: '/'},
+  base: '/',
   cleanUrls: true,
   
   head: [
