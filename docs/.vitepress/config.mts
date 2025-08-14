@@ -5,8 +5,17 @@ export default defineConfig({
   description: '燕山大学计算机学科GPU集群使用指南',
   lang: 'zh-CN',
   base: '/YSUHPC/',
+  cleanUrls: true,
+  
+  head: [
+    ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1.0' }],
+    ['link', { rel: 'icon', href: '/YSUHPC/logo.svg' }]
+  ],
   
   themeConfig: {
+    logo: '/YSUHPC/logo.svg',
+    siteTitle: '燕山大学GPU集群',
+    
     nav: [
       { text: '首页', link: '/' },
       { text: '用户手册', link: '/manual/' },
@@ -52,6 +61,28 @@ export default defineConfig({
 
     search: {
       provider: 'local'
+    },
+    
+    footer: {
+      message: '燕山大学计算机学科GPU集群用户手册',
+      copyright: 'Copyright © 2024 燕山大学'
+    },
+    
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+    
+    outline: {
+      label: '页面导航'
+    },
+    
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
     }
   },
 

@@ -6,7 +6,7 @@ hero:
   text: "用户手册"
   tagline: 高性能计算服务平台使用指南
   image:
-    src: /logo.svg
+    src: /YSUHPC/logo.svg
     alt: 燕山大学GPU集群
   actions:
     - theme: brand
