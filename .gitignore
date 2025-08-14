@@ -1,0 +1,19 @@
+# 屏蔽TODO文件
+TODO List.md
+
+# 屏蔽燕山大学相关文件
+燕山大学GPU集群用户手册.md
+燕山大学计算机学科GPU集群用户手册v4.3.pdf
+log.log
+
+# 其他常见忽略文件
+node_modules/
+.DS_Store
+*.log
+.env
+.env.local
+.env.*.local
+dist/
+build/
+*.tmp
+*.temp
